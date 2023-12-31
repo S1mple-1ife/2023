@@ -244,13 +244,13 @@ function toggleSound(toggle) {
 	}
 }
 
-//function toggleMenu(toggle) {
-//	if (typeof toggle === 'boolean') {
-//		store.setState({ menuOpen: toggle });
-//	} else {
-//		store.setState({ menuOpen: !store.state.menuOpen });
-//	}
-//} 
+function toggleMenu(toggle) {
+	if (typeof toggle === 'boolean') {
+		store.setState({ menuOpen: toggle });
+	} else {
+		store.setState({ menuOpen: !store.state.menuOpen });
+	}
+} 
 
 function updateConfig(nextConfig) {
 	nextConfig = nextConfig || getConfigFromDOM();
